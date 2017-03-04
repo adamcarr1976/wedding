@@ -4,95 +4,99 @@
 <head>
     <title></title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/app.css">
 
-
-    <style>
-        html,
-        body {
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-        }
-        
-        body {
-            text-align: center;
-            background-color: #fcd9d8;
-            font-family: "Californian FB", "Times New Roman";
-            color: rgba(255, 255, 255, 0.98);
-            text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.35);
-        }
-        
-        .holder {
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        
-        @media (min-width: 425px) {
-            .holder {
-                font-size: 4em;
-            }
-            .holder div {
-                background: inherit;
-            }
-        }
-        
-        @media (min-width: 1024px) {
-            .holder {
-                font-size: 6.5em;
-            }
-            .holder div {
-                display: inline-block;
-                padding: 20px;
-                background: rgba(255, 255, 255, 0.5);
-                border-radius: 15px;
-            }
-        }
-        
-        @media (min-width: 1200px) {
-            .holder {
-                font-size: 8.5em;
-            }
-        }
-        
-        @media (min-width: 1400px) {
-            .holder {
-                font-size: 11.5em;
-            }
-        }
-    </style>
 </head>
 
 <body>
-    <div class="holder">
-        <div>
-            Kirsty & Adam
-            <p>
-                Save The Date
-            </p>
-            <p>16th September 2017.</p>
-        </div>
-    </div>
+    <header>
+        <nav>
+        </nav>
+    </header>
+    <section class="container-fluid">
+        <section class="row">
+            <img class="img-responsive" src="./assets/img/Desktop2x.png" alt="Wedding Roses">
+        </section>
 
-    <div class="container">
-    </div>
+        <section class="container order-day" style="padding-left:50px; padding-right:50px;">
+            <div class="row">
+                <div class="col-lg-4 col-sm-4">
+                    <div class="thumbnail">
+                        <img alt="map" src="./assets/img/map.png" />
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
+                                at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p>
+                                <a href="#" class="btn btn-primary" role="button">Button</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                    <div class="thumbnail thumbnail-flip-x">
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
+                                at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        </div>
+                        <img alt="Ceremony Room" src="./assets/img/ceremony-room.png" />
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-4">
+                    <div class="thumbnail">
+                        <img alt="Isaacs on the Quay" src="./assets/img/isaacs.png" />
+                        <div class="caption">
+                            <h3>Thumbnail label</h3>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
+                                at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p>
+                                <a href="#" class="btn btn-primary" role="button">Button</a>
+                                <a href="#" class="btn btn-default" role="button">Button</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row rsvp">
+            <h1>RSVP</h1>
+            <p>Enter your invite code below</p>
+            <form class="form-inline">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><img src="./assets/img/wedding-ring.png" style="width:15px;" alt="rings"/></div> 
+                        <input class="form-control" id="exampleInputAmount" placeholder="Invite Code">
+                        <div class="input-group-addon btn btn-rsvp">RSVP</div> 
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </section>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js "></script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js "><\/script>')
+    </script>
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js " integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS "
+        crossorigin="anonymous "></script>
 </body>
 
 </html>
