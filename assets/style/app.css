@@ -122,6 +122,14 @@ section.container-fluid {
     box-shadow: none;
 }
 
+.suppliers .col-md-4 {
+    min-height: 210px;
+}
+
+a, a:hover, a:visited {
+    color: rgb(61, 77, 101);
+}
+
 .btn-rsvp {
     background: #B0A672;
     color: #fff;
@@ -136,7 +144,7 @@ section.container-fluid {
 }
 
 footer {
-    color: #fff;
+    color: #eee;
     text-align: center;
 }
 
