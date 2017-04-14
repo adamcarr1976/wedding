@@ -3,13 +3,18 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    height: 100%;
 }
 
 body {
     background-color: #3D4D65;
     font-family: 'Roboto', sans-serif;
-    color: #fff;
+    color: rgb(61, 77, 101);
     padding-bottom: 50px;
+}
+
+a, a:hover, a:visited {
+    color: /*#7B45A1;*/ rgb(61, 77, 101);
 }
 
 .container-fluid {
@@ -17,19 +22,19 @@ body {
     padding-left: 0;
 }
 
-section.container-fluid {
-    color:#3D4D65
-}
+.hero-page { 
 
-.hero-page {
-    fill: #fff;    
-}
+    padding-top: 50px;
 
-.hero-page header {
-    position: absolute;
-    top: 100px;
-    left: 0px;
-    width: 100%;
+    background-image: url('../img/Desktop2x.png');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero-page nav {
@@ -41,13 +46,9 @@ section.container-fluid {
     margin: 0 auto;
 }
 
-.hero-page img.img-responsive {
-    width: 100%;
-}
-
 .wedding-menu {
     font-family: 'Great Vibes', Helvetica, sans-serif;
-    font-size: 48px;
+
     text-shadow: 2px 2px 1px rgba(0,0,0,0.33);
     list-style: none;
     display: block;
@@ -55,10 +56,44 @@ section.container-fluid {
     margin-top: 15px;
 }
 
-.wedding-menu li, .wedding-menu a {
-    color: #fff;
-    display: inline-block;
-}
+    @media only screen and (max-width : 768px) {
+        .wedding-menu {
+            font-size: 40px;
+       }
+       
+        .wedding-menu li, .wedding-menu a {
+            color: #fff;
+            display: block;
+        }
+
+        .wedding-logo {
+            width: 350px;
+        }
+
+    }
+
+    @media only screen and (min-width : 768px) {
+       .wedding-menu {
+            font-size: 48px;
+       }
+       
+        .wedding-menu li, .wedding-menu a {
+            color: #fff;
+            display: inline-block;
+        }
+
+        .wedding-logo {
+            width: 510px;
+        }
+
+       
+    }
+
+      @media only screen and (min-width : 991px) {
+           .suppliers .col-md-4 {
+           min-height: 210px;
+        }
+      }
 
 .wedding-menu li a:hover {
     text-decoration: none;
@@ -70,8 +105,6 @@ section.container-fluid {
 }
 
 .wedding-logo {
-    width: 510px;
-    height: 186px;
     fill: #ffffff;
     -webkit-filter: drop-shadow( -4px -5px 1prgba(0, 0, 0, 0.33));
     filter: drop-shadow( 4px 5px 1px rgba(0, 0, 0, 0.33) );
@@ -120,14 +153,6 @@ section.container-fluid {
     border-bottom: 1px solid #C9D3DF;
     border-left: none;
     box-shadow: none;
-}
-
-.suppliers .col-md-4 {
-    min-height: 210px;
-}
-
-a, a:hover, a:visited {
-    color: rgb(61, 77, 101);
 }
 
 .btn-rsvp {
